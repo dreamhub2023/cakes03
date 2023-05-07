@@ -168,7 +168,7 @@ figcaption {
     transition: transform: 0.5s;
 }
 .caketrans:hover {
-    transform: translateY(-12px)
+    transform: translateY(-10px)
 }        
     
 
