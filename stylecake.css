@@ -20,17 +20,20 @@ header {
     width: 100%;
 }
 .logo {
-    cursor: pointer;
-    margin-right: auto;
-    width: 15%;
-    margin:10x;
-    order: 1;
+    /*cursor: pointer;
+    margin-right: auto; */
+    width: 150px;
+    /*margin:10x;
+    order: 1; */
 }
 nav {
     margin-left: auto;
     order: 2;
 }
-
+nav ul li {
+    display: flex;
+    list-style: none;
+    margin: 10px 15px;
 .cta {
     order: 3;
     margin-left: auto;
