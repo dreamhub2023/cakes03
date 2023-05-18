@@ -151,12 +151,16 @@ address {
 
 
 /* Anything under 1024px */
-@media screen  and (max-width: 1024) {
+@media screen  and (max-width: 1024px) {
     .image-grid {
         --num-cols: 2;
-        --row-height: 200px;
-    }
-    
+        --row-height: 400px;
+    } 
+}
+@media screen  and (max-width: 500px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    } 
 } 
  
 figcaption {
