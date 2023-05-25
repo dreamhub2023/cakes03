@@ -47,6 +47,7 @@ nav {
 .nav_links li a {
     transition: all 0.30s ease 0s;
     text-decoration: none;
+    color: #fff;
 }
 .nav_links li a:hover {
     padding: 5px 16px;
