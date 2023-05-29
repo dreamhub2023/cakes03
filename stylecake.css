@@ -126,7 +126,7 @@ address {
 .image-grid {
     --gap: 15px;
     --num-cols: 4;
-    --row-height: 400px;
+    --row-height: 600px;
     box-sizing: border-box;
     padding: var(--gap);
 
