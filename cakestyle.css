@@ -351,6 +351,12 @@ header {
     font-size: 23px;
     font-weight: 500;
     }
+    .about-cake h2 {
+    font-size: 23px;
+    }
+    .about-cake li {
+    font-size: 18px;
+}
 }
 @media screen and (max-width: 700px) {
     .container-head {
