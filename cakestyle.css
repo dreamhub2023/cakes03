@@ -343,6 +343,10 @@ header {
     .slider-wrapper{
         width: 600px;
     }
+    .cake-nav-font {
+    font-size: 18px;
+    font-weight: 500;
+}
 }
 @media screen and (max-width: 700px) {
     .container-head {
