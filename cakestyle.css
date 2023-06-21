@@ -352,10 +352,10 @@ header {
     font-weight: 500;
     }
     .about-cake h2 {
-    font-size: 23px;
+    font-size: 22px;
     }
     .about-cake li {
-    font-size: 18px;
+    font-size: 17px;
 }
 }
 @media screen and (max-width: 700px) {
