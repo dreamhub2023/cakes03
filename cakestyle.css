@@ -1,0 +1,371 @@
+:root {
+    --primary-color: #B2EBF2;
+    --secondary-color: #2fa5e9;
+    --white: #fff;
+    --green: #10b981;
+    --gray: #64748b;
+    --dark-color: #0f172a;
+    --grid-gap: 20px;
+    --box-shadow: 3px 5px 5px rgba(56, 40, 149, 0.2);
+    --box-shadow2:  3px 5px 5px black;
+    --cols-num: 2;
+    --grid-gap: 15px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+/* Header */
+header {
+    background: var(--primary-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.container-head {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.logo-cake {
+    margin: 5px 5px;
+    width: 100px;
+    height: 100px;
+}
+.cake-nav {
+    /* background: var(--green); */
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.cake-nav ul {
+    display: flex;
+    column-gap: 20px;
+}
+.cake-nav ul li {
+    list-style: none;
+}
+
+.cake-nav ul li a {
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: var(--dark-color);
+    margin: 0 10px;
+}
+.cake-nav-font {
+    font-size: 22px;
+    font-weight: 530;
+}
+.gall {
+    text-decoration: none;
+    color: var(--dark-color);
+    padding: 5px 22px;
+    background-color: transparent;
+    border: var(--white);
+    letter-spacing: 3px;
+    
+}
+.gall a {
+    padding-right: 10px;
+    margin: 0 10px;
+    letter-spacing: 3px;
+    
+}
+.gall:hover {
+    border: 2px solid var(--white)
+}
+
+.cake-nav ul li a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid magenta;
+}
+
+.contact {
+    margin: 10px 20px;
+    text-decoration: none; 
+    font-weight: 550;
+    letter-spacing: 3px;
+    overflow: visible;
+    border: 2px solid var(--white);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.contact:hover {
+    color: magenta;
+    border: 2px solid magenta;
+}
+.welcome {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 8px 0;
+}
+.welcome h1 {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+}
+.welcome a {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+/* Slider area */
+
+.cakecase {
+    background-color: var(--primary-color);
+    overflow: auto;
+    padding: 0 30px;
+}
+.cakecase .card {
+    overflow: hidden;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap);
+    justify-content: center;
+    height: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cols-num), 1fr);
+    gap: var(--grid-gap);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Image slider */
+.slider-wrapper {
+    max-width: 800px;
+    position: relative;
+    /* margin: 0 auto; */
+}
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+    box-shadow: var(--box-shadow);
+}
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 16px;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a {
+    width: 40px;
+    height: 14px;
+    border: 3px solid greenyellow;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: opacity ease 300ms;
+}
+.slider-nav a:hover {
+    background-color: #fff;
+}
+
+.slider-wrapper h2 {
+    color: magenta;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 4px;
+    margin: 0;
+    text-align: center;
+}
+/* Showcase */
+.showcase-cake {
+    /* box-sizing: border-box; */
+    width: 100%;
+    /* height: 240vh; */
+    margin: 0;
+    padding: 0;
+    /* background-image: url(moenycakes02fullbackground.jpg); */
+}
+.cakes h1 {
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark-color);
+    font-weight: 500;
+    letter-spacing: 5px;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.container {
+    background-color: #64748b;
+    padding: 5px auto;
+    overflow: hidden;
+    align-items: center;
+}
+.cardcakes {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+.cardcakes img {
+    height: 80%;
+    padding-top: 15px;
+    
+}
+.showcase-cake .flex {
+    flex-wrap: wrap;
+}
+.showcase-cake .cardcakes {
+    text-align: center;
+    margin: 15px 15px 30px;
+    box-shadow: var(--box-shadow2);
+    transition: transform 0.3s ease-in;
+}
+.cardcakes h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 10px;
+}
+.showcase-cake .cardcakes:hover {
+    transform: translateY(-8px);
+}
+.about-cake {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(360deg, transparent, rgb(8, 0, 255, .5)), url(background/cakebackground.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.about-cake h2 {
+    font-size: 30px;
+    text-shadow: 3px 4px 5px magenta;
+}
+.about-cake li {
+    font-size: 22px;
+}
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .container nav ul li {
+    list-style-type: none;
+}
+
+.footer .container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.footer .container nav ul li a:hover {
+    color: blue;
+    text-shadow: 2px 2px 3px magenta;
+}
+.footer .social {
+    justify-self: end;
+    margin-right: 25px;
+}
+
+.footer .social a {
+    margin: 0 10px;
+    color: #fff;
+}
+.footer .container h1, p {
+    color: #fff;
+    margin-left: 25px;
+}
+
+
+.about-cake .contact-a ul li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about-cake .contact-a ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;  
+    padding-bottom: 8px; 
+}
+.about-cake .contact-a ul li a:hover {
+    border-bottom: 3px solid red;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .container-head {
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 15px;
+    }
+    .cakecase .grid {
+        grid-template-columns: 1fr;
+    }
+    .slider-wrapper{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .container-head {
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 15px;
+    }
+    .cakecase .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .slider-wrapper{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container-head {
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 15px;
+    }
+    .cakecase .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
