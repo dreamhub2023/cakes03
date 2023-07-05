@@ -206,6 +206,33 @@ fieldset {
     grid-row: span 6;
 }
 
+@media screen and (max-width: 480px) {
+    .card {
+        width: 50%;
+        justify-self: center;
+    }
+    .gallery-container01 {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 100%;
+        justify-self: center;
+    }
+    .gallery-container03 {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 100%;
+        justify-self: center;
+    }
+    .gallley-item,
+    .gallery-item .image {
+        width: 90%;
+        height: 90%;
+    }
+
+    .w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
+        grid-column: span 1;
+    }
+}
 @media screen and (max-width: 500px) {
     .card {
         width: 50%;
@@ -232,7 +259,6 @@ fieldset {
     .w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
         grid-column: span 1;
     }
-    
 }
 @media screen and (max-width: 700px) {
     .card {
