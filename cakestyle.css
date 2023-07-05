@@ -328,7 +328,7 @@ header {
 .about-cake .contact-a ul li a:hover {
     border-bottom: 3px solid red;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
     .container-head {
         flex-direction: column;
         row-gap: 20px;
@@ -338,7 +338,7 @@ header {
         grid-template-columns: 1fr;
     }
     .slider-wrapper{
-        width: 470px;
+        width: 460px;
     }
     .cake-nav-font {
     font-size: 18px;
