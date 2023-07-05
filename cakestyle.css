@@ -328,8 +328,36 @@ header {
 .about-cake .contact-a ul li a:hover {
     border-bottom: 3px solid red;
 }
-
-
+@media screen and (max-width: 480px) {
+    .container-head {
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 15px;
+    }
+    .cakecase .grid {
+        grid-template-columns: 1fr;
+    }
+    .slider-wrapper{
+        width: 470px;
+    }
+    .cake-nav-font {
+    font-size: 18px;
+    font-weight: 500;
+    }
+    .welcome a {
+    font-size: 25px;
+    font-weight: 500;
+    }
+    .about-cake h2 {
+    font-size: 22px;
+    }
+    .about-cake li {
+    font-size: 17px;
+    }
+    .footer .container h1{
+        font-size: 22px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .container-head {
