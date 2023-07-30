@@ -190,8 +190,8 @@ fieldset {
 #CloseCake {
     position: absolute;
     top: 20px;
-    right: 20px;
-    font-size: 48px;
+    right: 15px;
+    font-size: 32px;
     font-weight: 800;
     color: white;
     cursor: pointer; 
