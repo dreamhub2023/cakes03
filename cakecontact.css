@@ -1,0 +1,178 @@
+*{
+    text-decoration: none;
+
+}
+
+.background-container {
+    width: 100%;
+    max-height: 100%;
+    background-image: linear-gradient(360deg, transparent, rgba(79, 76, 167, 0.5)), url(const/const3.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 5px 0;
+  
+}
+.contact-info {
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.background-container h1 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-us {
+    width: 480px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(31, 28, 47, 0.2);
+}
+.contact-us h3 {
+    padding: 2px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: blue;
+}
+.cont {
+    padding: 0 15px;
+    display: flex;
+    /* background-color: aquamarine; */
+}
+
+.cont .contact-icon {
+    padding-right: 15px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    background-color: #1e293b;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 50%;    
+}
+
+.cont .contact-icon i {
+    color: white;
+    padding-left: 13px;
+    align-self: center;
+}
+.cont .contact-text h4 {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    margin:5px 0;
+    
+}
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    /* background-color: white; */
+    height: 12vh;
+}
+
+.contact-text p {
+    font-size: 18px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background: gray; */
+    margin-left: 2px;
+    margin: 3px 0;
+}
+.contact-text a {
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .5s;
+    color: tomato;
+}
+.contact-text a:hover {
+    border-bottom: 2px solid tomato;
+    transform: scale(.98)
+}
+
+
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 350px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 5px 5px rgba(31, 28, 47, 0.2);
+}
+.contact-message h3 {
+    font-size: 30px;
+    color: blue;
+    margin: 2px;
+}
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+form input, form textarea {
+    margin: 10px 0;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: #ebeff5;
+    font-size: 15px;
+}
+button {
+    font-size: 20px;
+    color: white;
+    padding: 10px 0;
+    background: tomato;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.footer .container {
+    background-color: #090f1c;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-background .background-container{
+        height: 100%;
+        background-color: aqua;
+    }
+
+
+}
+@media screen and (max-width: 700px) {
+    .main-background {
+        height: 100vh;   
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-background {
+        height: 100vh;
+    }   
+}
+@media screen and (max-width: 1000px) {
+    .main-background {
+        height: 100vh;
+        
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main-background {
+        height: 100vh;
+        
+    }
+}
