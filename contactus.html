@@ -35,27 +35,74 @@
             <a href="tel:+639159281564">Our Address and Contact No. (+639159281564)</a>
         </div>
         
-        <article id="about">
-            <div class="about-cake">
-                <h2><ins>ADDRESS</ins></h2>
+        <!-- <div class="contact-background"> -->
+            <div class="background-container">
+                <h1 class="text-align">Contact Info</h1>
+                <div class="contact-info">
+                    <div class="contact-us">
+                        <h3 class="text-align">Keep in touch with us</h3>
+                        <div class="cont">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Fatima Village, Matina, Davao City, Philippines</p>
+                            </div>
+                        </div>    
+                        <div class="cont">
+                            <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-text">
+                                <h4>Contact No.</h4>
+                                <p><a href="tel:+639159281564">+63 9159281564</a></p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <div class="contact-icon"><i class="fa-solid fa-at"></i></div>
+                            <div class="contact-text">
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:lornaroxas18@yahoo.com">lornaroxas18@yahoo.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-message">
+                        <form method="post">
+                            <h3 class="text-align">Send Message</h3>
+                            <input type="text" id="name" placeholder="Enter name here" required>
+                            <input type="email" id="email", placeholder="E-mail" required>
+                            <textarea di="message" rows="4" placeholder="Enter message here"></textarea>
 
-                <ul>
-                    <li>Fatima Village, Matina</li>
-                    <li>Davao City, Philippines</li>
+                            <button id="submit">Send</button>
+                        </form>
+                        <script src="https://smtpjs.com/v3/smtp.js">
+                        </script>
+                        
+     
+                        <script>
+                            var convar = document.getElementById("submit")
+                            convar.addEventListener('click', function(e) {
+                                e.preventDefault()                         
+                                var name = document.getElementById('name').value;
+                                var email = document.getElementById('email').value;
+                                var message = document.getElementById('message').value;
+                                var body = 'name : '+ name + '<br/> email: ' + email + '<br/> message : ' + message ;
+                                                Email.send({
+                                        SecureToken : "280e74ba-8c13-4621-8a37-d145c62d705b",
+                                        To : 'marioxcalapine@gmail.com',
+                                        From : "enexta2020@gmail.com",
+                                        Subject : "Contact Message",
+                                        Body : body
+                                    }).then(
+                                    message => alert('Message Sent OK')
+                                    );
+                            })
+                        </script>
+                    </div>
                     
-                </ul>
-                <br>
-                <h2><ins>E-mail and Contact No.</ins></h2>
-                <div class="contact-a">
-                    <ul>
-                        <li><a href="mailto:lornaroxas18@yahoo.com">E-mail Adress:&nbsp;lornaroxas18@yahoo.com</a></li>
-                        <br>
-                        <li><a href="tel:+639159281564">Mobile No. &nbsp;&nbsp; +63 9159281564</a></li>       
-                    </ul>
+                    <script src="https://smtpjs.com/v3/smtp.js">
+                    </script>
+                    
                 </div>
-            </div>
-            
-        </article>
+        
+            </div> 
         
     </main>
     <footer class="footer bg-dark">
