@@ -5,6 +5,7 @@
     --green: #10b981;
     --gray: #64748b;
     --dark-color: #0f172a;
+    --dark-color2: #090f1c;
     --grid-gap: 20px;
     --box-shadow: 3px 5px 5px rgba(56, 40, 149, 0.2);
     --box-shadow2:  3px 5px 5px black;
@@ -284,6 +285,10 @@ header {
 /* Footer */
 .footer {
     background-color: var(--dark-color);
+}
+.footer .container {
+    margin-top: 5px;
+    background-color: var(--dark-color2);
 }
 .footer .container nav ul li {
     list-style-type: none;
