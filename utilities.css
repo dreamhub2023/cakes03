@@ -47,25 +47,21 @@
     background-image: url(cakecard/debut.jpg);
     background-size: contain;
     width: 100%;
-    background-repeat: no-repeat;
 }
 .card4 {
     background-image: url(cakecard/chanelcakesmall.jpg);
     background-size: contain;
     width: 100%;
-    background-repeat: no-repeat;
 }
 .card5 {
     background-image: url(cakecard/cakeWcupcakesGreen.jpg);
     background-size: contain;
     width: 100%;
-    background-repeat: no-repeat;
 }
 .card6 {
     background-image: url(cakecard/heartcake07.jpg);
     background-size: contain;
     width: 100%;
-    background-repeat: no-repeat;
 }
 
 .card h3 {
