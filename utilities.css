@@ -31,13 +31,13 @@
     position: relative;
 }
 .card1 {
-    background-image: url(cakecard/birthday.jpg);
+    background-image: url(gallery/gallery05/Lino40th.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
 }
 .card2 {
-    background-image: url(cakecard/wedanniv.jpg);
+    background-image: url(gallery/gallery05/chocoMoist45.jpg);
     background-size: contain;
     width: 100%;
 }
