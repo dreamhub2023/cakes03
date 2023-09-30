@@ -29,6 +29,8 @@
     padding: 2px 2px;
     margin: 5px 5px;
     position: relative;
+     background-repeat: no-repeat;
+    background-position: center;
 }
 .card1 {
     background-image: url(gallery/gallery05/Lino40th.jpg);
