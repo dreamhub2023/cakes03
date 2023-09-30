@@ -52,16 +52,22 @@
     background-image: url(cakecard/chanelcakesmall.jpg);
     background-size: contain;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .card5 {
     background-image: url(cakecard/cakeWcupcakesGreen.jpg);
     background-size: contain;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .card6 {
     background-image: url(cakecard/heartcake07.jpg);
     background-size: contain;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card h3 {
