@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Dream Cakes" content="Customized Cakes & cup cakes">
+    <meta name="Author" content="dreamhub">
+    <title>Dream Cakes</title>
+    <link rel="stylesheet" href="cakestyle.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="icon" href="logoicons/iconcake.jpg">
+    <script src="https://kit.fontawesome.com/2cab8a32a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img class="logo-cake" src="logoicons/dreamcakelogo.jpg" alt="Cake Logo">        
+                </div>
+                <nav>
+                    <ul id="MenuItems" class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img class="menu-bar" src="logoicons/menubar.png" alt="menubar" onclick="menushow()">
+            </div>
+        </div>
+    </header>
+    <hr>
+    <br>
+<!-- Event Gallery -->
+    <div class="event-container single-event">
+        <div class="row">
+            <!------------------- 1st Event ------------>
+            <div class="column">
+                <h2 class="text-align">Birthday</h2>
+                <h4 class="text-align">Birthday Cakes for 40th, 45th and 80th</h4>
+                <img src="gallery/gallery07/combine40n45n80.jpg" width="100%" id="CakeBigImg">
+
+                <div class="small-cake-row">
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery07/combine40n45n80.jpg" width="100%" class="small-cake-img">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery07/Lino40th.jpg" width="100%" class="small-cake-img">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery07/Insie80th.jpg" width="100%" class="small-cake-img">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery07/chocoMoist45.jpg" width="100%" class="small-cake-img">
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd Event Column -->
+            <div class="column">
+                <h2 class="text-align">Birthday and Pre-departure</h2>
+                <h4 class="text-align"></h4>
+                <img src="gallery/gallery05/Alexbday.jpg" width="100%" id="CakeBigImg2">
+
+                <div class="small-cake-row">
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery05/Alexbday.jpg" width="100%" class="small-cake-img2">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery05/cake40lino.jpg" width="100%" class="small-cake-img2">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery05/cake45.jpg" width="100%" class="small-cake-img2">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery05/cake80.jpg" width="100%" class="small-cake-img2">
+                    </div>
+                </div>
+            </div>
+            <!-- 3nd Event Column -->
+            <div class="column">
+                <h2 class="text-align">Birthdays</h2>
+                <h4 class="text-align">Kiesha's, Murgana Milan and Miranda Violet Birthday</h4>
+                <img src="gallery/gallery06/kieshab_day01.jpg" width="100%" id="CakeBigImg3">
+
+                <div class="small-cake-row">
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery06/kieshab_day01.jpg" width="100%" class="small-cake-img3">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery06/gallerycake0402.jpg" width="100%" class="small-cake-img3">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery06/galllerycake0401.jpg" width="100%" class="small-cake-img3">
+                    </div>
+                    <div class="small-cake-col">
+                        <img src="gallery/gallery06/galllerycake0403.jpg" width="100%" class="small-cake-img3">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>
+    </div> 
+
+    <!--------------------- Footer --------------------------->
+    <footer class="footer bg-dark">
+        <div class="container grid grid-3">
+            <div>
+                <h1 class="foot-head">Dream Cakes</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <br>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <br>
+                    <li><a href="#">Back to Top</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/DreamCakesByLorna"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  menu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+
+        function menushow() {
+            if (MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+    <!-- script for single event -->
+    <script>
+        var CakeBigImg = document.getElementById("CakeBigImg");
+        var SmallCakeImg = document.getElementsByClassName("small-cake-img");
+
+            SmallCakeImg[0].onclick = function()
+            {
+                CakeBigImg.src = SmallCakeImg[0].src;
+            }
+            SmallCakeImg[1].onclick = function()
+            {
+                CakeBigImg.src = SmallCakeImg[1].src;
+            }
+            SmallCakeImg[2].onclick = function()
+            {
+                CakeBigImg.src = SmallCakeImg[2].src;
+            }
+            SmallCakeImg[3].onclick = function()
+            {
+                CakeBigImg.src = SmallCakeImg[3].src;
+            }
+    </script>
+    <!-- script for single event -->
+    <script>
+        var CakeBigImg2 = document.getElementById("CakeBigImg2");
+        var SmallCakeImg2 = document.getElementsByClassName("small-cake-img2");
+
+            SmallCakeImg2[0].onclick = function()
+            {
+                CakeBigImg2.src = SmallCakeImg2[0].src;
+            }
+            SmallCakeImg2[1].onclick = function()
+            {
+                CakeBigImg2.src = SmallCakeImg2[1].src;
+            }
+            SmallCakeImg2[2].onclick = function()
+            {
+                CakeBigImg2.src = SmallCakeImg2[2].src;
+            }
+            SmallCakeImg2[3].onclick = function()
+            {
+                CakeBigImg2.src = SmallCakeImg2[3].src;
+            }
+    </script>
+    <!-- script for single event -->
+    <script>
+        var CakeBigImg3 = document.getElementById("CakeBigImg3");
+        var SmallCakeImg3 = document.getElementsByClassName("small-cake-img3");
+
+            SmallCakeImg3[0].onclick = function()
+            {
+                CakeBigImg3.src = SmallCakeImg3[0].src;
+            }
+            SmallCakeImg3[1].onclick = function()
+            {
+                CakeBigImg3.src = SmallCakeImg3[1].src;
+            }
+            SmallCakeImg3[2].onclick = function()
+            {
+                CakeBigImg3.src = SmallCakeImg3[2].src;
+            }
+            SmallCakeImg3[3].onclick = function()
+            {
+                CakeBigImg3.src = SmallCakeImg3[3].src;
+            }
+    </script>
+   
+
+</body>
+</html>

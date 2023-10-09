@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container-event {
+    background: linear-gradient(180deg, #29a2d180);
+}
+.header1 .nav-bar {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header1 ul {
+    display: flex;
+}
+.header1 nav ul li {
+    display: flex;
+    flex-direction: wrap;
+}
+.header1 nav ul li a {
+    color: #474343;
+    padding: 10px;
+    font-size: 16px;
+}
+.header1 .nav-bar .menu-bar{
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+/* ---- utilities ------*/
+.text-align {
+    text-align: center;
+}
+/* ----- Cake Products */
+
+.event-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.single-event {
+    margin-top: 0;
+}
+.single-event .row .column {
+    padding: 5px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.column {
+    flex-basis: 35%;
+    min-width: 300px;
+    padding-top: 20px;
+}
+.column img {
+    max-width: 100%;
+    padding: 20px 0;
+}
+.small-cake-row {
+    display: flex;
+    justify-content: space-around;
+}
+.small-cake-col {
+    flex-basis: 25%;
+    cursor: pointer;
+    margin: 5px;
+}
+.small-cake-col img {
+    padding-right: 5px;
+}
+/* ------Text & captions--------- */
+.event-container h4 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #474343;
+    padding-top: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header1 .nav-bar nav ul {
+        position: absolute;
+        top: 70px;
+        left: 120px;
+        background: #2cb8db;
+        width: 100%;
+        overflow: hidden;
+    }
+    .header1 .nav-bar ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .header1 .nav-bar ul li a {
+        color: #fff;
+    }
+    .header1 .nav-bar .menu-bar {
+        display: block;
+    }
+    .nav-bar .logo img {
+        height: 45px;
+        width: 45px;
+    }
+
+}
